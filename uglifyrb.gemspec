@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["malida"]
   spec.email         = ["malida310892@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
+  spec.summary       = "Ruby wrapper for UglifyJS JavaScript compressor"
+  spec.description   = "Uglifyrb minifies JavaScript files by wrapping UglifyJS to be accessible in Ruby"
   spec.homepage      = "Thttp://github.com/malida/uglifyrb"
   spec.license       = "MIT"
 
