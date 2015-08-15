@@ -86,7 +86,7 @@ class Compressor
   private
 
   def compress_node(source)
-    command = "uglifyjs #{source} "
+    command = "uglifyjs #{source} -c -m"
     #command = command + source_map_options
     output = `#{command}`
     return output unless output.empty?
