@@ -86,7 +86,9 @@ class Compressor
   private
 
   def compress_node(source)
-    command = "uglifyjs #{source} -c -m"
+    f = Tempfile.new("jstempscmap.js")
+    f.close
+    command = "uglifyjs #{source} -p relative -c -m -o '~' --source-map '#{f.path}'"
     #command = command + source_map_options
     output = `#{command}`
     return output unless output.empty?

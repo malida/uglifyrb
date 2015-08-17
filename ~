@@ -1,0 +1,2 @@
+module.exports=function(s){s.initConfig({coffee:{compileWithMaps:{options:{sourceMap:!0,sourceMapDir:"build/maps"},files:{"build/js/app.js":["source/js/*.coffee"]}}},uglify:{compress:{options:{sourceMap:!0,sourceMapIn:"build/maps/app.js.map",sourceMapIncludeSources:!0},files:{"build/js/application.js":["build/js/app.js"]}}}}),s.loadNpmTasks("grunt-contrib-coffee"),s.loadNpmTasks("grunt-contrib-uglify"),s.registerTask("default",["coffee","uglify"])};
+//# sourceMappingURL=../../../tmp/jstempscmap.js20150817-7819-vnwwx
